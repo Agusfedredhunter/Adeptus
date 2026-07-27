@@ -61,6 +61,7 @@ services:
     container_name: app_frontend
     restart: unless-stopped
     environment:
+      - DISABLE_ESLINT_PLUGIN=true
       - REACT_APP_API_URL=http://localhost:3001/api
       - CHOKIDAR_USEPOLLING=true
       - WATCHPACK_POLLING=true
